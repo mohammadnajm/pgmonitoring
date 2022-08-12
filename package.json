@@ -1,6 +1,6 @@
 {
-  "name": "pgmonitoring",
-  "version": "1.0.0",
+  "name": "pg-cli-monitoring",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
