@@ -22,7 +22,7 @@ Pg_monitoring.increment("metric_name" , 75)
 
 Pg_monitoring.decrement("metric_name")
 
-Pg_monitoring.decrement("metric_name" , -21)
+Pg_monitoring.decrement("metric_name" , 75)
 
 
 ```
