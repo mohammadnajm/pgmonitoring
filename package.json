@@ -1,6 +1,6 @@
 {
   "name": "pg-cli-monitoring",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "^4.5.1",
     "socket.io-client": "^4.5.1"
   }
 }

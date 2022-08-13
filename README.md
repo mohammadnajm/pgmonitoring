@@ -19,7 +19,6 @@ Pg_monitoring.increment("metric_name" , 75)
 
 
 // Send Metric: Decrements a stat by a value (default is 1)
-
 Pg_monitoring.decrement("metric_name")
 
 Pg_monitoring.decrement("metric_name" , 75)
