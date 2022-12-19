@@ -1,11 +1,11 @@
 {
   "name": "pg-cli-monitoring",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index server.js"
+    "start": "nodemon test.js"
   },
   "author": "",
   "license": "ISC",
