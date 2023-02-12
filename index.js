@@ -1,5 +1,5 @@
 var io = require('socket.io-client');
-const socket = io.connect('http://0.0.0.0:3000', { reconnect: true });
+const socket = io.connect('http://0.0.0.0:7896', { reconnect: true });
 
 class SocketCli {
     constructor() {
@@ -21,6 +21,12 @@ class SocketCli {
     decrement(metric = null, count = 1) {
         if (typeof (metric) == 'string' && typeof (count) == 'number' && count > 0) {
             socket.emit('decrement', { metric, count, apiKey: this.apiKey })
+        }
+    }
+
+    distribution(metric = null, count) {
+        if (typeof (metric) == 'string' && typeof (count) == 'number') {
+            socket.emit('distribution', { metric, count, apiKey: this.apiKey })
         }
     }
 
