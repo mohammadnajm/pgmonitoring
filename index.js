@@ -24,11 +24,35 @@ class SocketCli {
         }
     }
 
-    distribution(metric = null, count) {
+    distribution(metric = null, count = 1) {
         if (typeof (metric) == 'string' && typeof (count) == 'number') {
             socket.emit('distribution', { metric, count, apiKey: this.apiKey })
         }
     }
+
+    systemInfo_increment(metric = null, count = 1) {
+        if (typeof (metric) == 'string' && typeof (count) == 'number' && count > 0) {
+            socket.emit('systemInfo_increment', { metric, count, apiKey: this.apiKey })
+        }
+    }
+    systemInfo_decrement(metric = null, count = 1) {
+        if (typeof (metric) == 'string' && typeof (count) == 'number' && count > 0) {
+            socket.emit('systemInfo_decrement', { metric, count, apiKey: this.apiKey })
+        }
+    }
+
+    systemInfo_distribution(metric = null, count = 1) {
+        if (typeof (metric) == 'string' && typeof (count) == 'number') {
+            socket.emit('systemInfo_distribution', { metric, count, apiKey: this.apiKey })
+        }
+    }
+    systemInfo_percent(metric = null, count = 1) {
+        if (typeof (metric) == 'string' && typeof (count) == 'number') {
+            socket.emit('systemInfo_percent', { metric, count, apiKey: this.apiKey })
+        }
+    }
+
+
 
 }
 
